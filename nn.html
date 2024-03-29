@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+        }
+
+        header, nav, main {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .menu-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Image Links</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="home">
+            <h2>Home</h2>
+            <p>World transformation through Technology.</p>
+            <a href="https://transcosmos.co.uk/blog/just-how-important-technology-is-to-customer-service-in-todays-time/" target="_blank">
+                <img src="Technology.jfif" alt="Technology Image">
+            </a>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Beauty of nature.</p>
+            <div class="gallery">
+                <a href="https://www.pinterest.com/pin/546483736011194981/" target="_blank">
+                    <img src="Nature.jfif" alt="Nature Image 1">
+                </a>
+                <a href="https://www.toppr.com/guides/essays/nature-essay/" target="_blank">
+                    <img src="nature2.jpeg" alt="Nature Image 2">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Nature_photography" target="_blank">
+                    <img src="nature3.jfif" alt="Nature Image 3">
+                </a>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <p>For food lovers!</p>
+            <p>Here is the menu.</p>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="https://karibecompany.com/kenyan-beef-pilau/" target="_blank">pilau</a>
+                    <img src="pilau3.jfif" alt="pilau Image">
+                </li>
+                <li class="menu-item">
+                    <a href="https://www.tastingtable.com/834391/what-makes-restaurant-burgers-taste-different-from-homemade-burgers/" target="_blank">Burger</a>
+                    <img src="burger2.jfif" alt="Burger Image">
+                </li>
+                <li class="menu-item">
+                    <a href="https://www.shutterstock.com/search/chicken-chips-salad" target="_blank">Chips chicken</a>
+                    </a>
+                    <img src="chipschicken2.jfif" alt="chips chicken">
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+CSS (styles.css):
+css
+Copy code
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    font-weight: bold;
+}
+JavaScript (script.js):
+javascript
+Copy code
+function notifyBank() {
+    const idInput = document.getElementById('idInput').value;
+    // Assume there is an API endpoint for notifying the bank
+    // You can replace the URL with the actual back-end endpoint
+    const apiUrl = 'http://your-backend-url/notifyBank';
+
+    fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ id: idInput }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('result').innerText = data.message;
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
